@@ -8,11 +8,13 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>search</artifactId>
+    <artifactId>config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>search</name>
+    <name>config</name>
     <description>Demo project for Spring Boot</description>
-
+    <properties>
+        <java.version>8</java.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -20,17 +22,14 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+            <version>2.1.2.RELEASE</version>
         </dependency>
     </dependencies>
+
 
 </project>
